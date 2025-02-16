@@ -1,0 +1,58 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif; /* Sets the font for the page */
+    text-align: center; /* Centers text */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Aligns items in a column */
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    min-height: 100vh; /* Ensures full height of viewport */
+    background-color: #7a8cb9; /* Sets background color */
+}
+
+/* Styling for the main heading */
+h1 {
+    margin: 0; /* Removes default margin */
+}
+
+/* Board layout styling */
+.board {
+    display: grid; /* Uses grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-rows: repeat(3, 1fr); /* Creates 3 equal rows */
+    gap: 9px; /* Adds spacing between grid items */
+    width: 90vw; /* Sets width relative to viewport width */
+    max-width: 300px; /* Limits maximum width */
+    height: 90vw; /* Sets height relative to viewport width */
+    max-height: 300px; /* Limits maximum height */
+    margin: 20px auto; /* Adds space around the board */
+}
+
+/* Styling for each cell in the board */
+.cell {
+    width: 100%; /* Fills available space */
+    height: 100%; /* Fills available space */
+    display: flex; /* Uses flexbox */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-size: 5em; /* Sets text size */
+    background-color: #f0f0f0; /* Sets background color */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+}
+
+/* Highlights winning cells */
+.cell.winner {
+    background-color: #8fbc8f; /* Changes color for winning combination */
+}
+
+/* Styling for the reset button */
+button {
+    margin-top: 20px; /* Adds space above the button */
+    padding: 10px 20px; /* Adds padding for better appearance */
+    font-size: 1em; /* Sets font size */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    color: #f3f3f3; /* Sets text color */
+    background-color: rgb(22, 3, 47); /* Sets button background color */
+}

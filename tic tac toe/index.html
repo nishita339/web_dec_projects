@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <!-- Linking external CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Tic Tac Toe</h1>
+    
+    <!-- Displays whose turn it is -->
+    <p id="turnIndicator">X's Turn</p>
+
+    <!-- The game board (3x3 grid) -->
+    <div class="board" id="board"></div>
+
+    <!-- Displays the result (Winner/Draw) -->
+    <p id="result"></p>
+
+    <!-- Button to reset the game -->
+    <button id="reset">Reset Game</button>
+
+    <!-- Sound effects for clicks and winning -->
+    <audio id="clickSound" src="/full stack developer/tic tac toe/assets/pick-92276.mp3" preload="auto"></audio>
+    <audio id="winSound" src="/full stack developer/tic tac toe/assets/winner-bell-game-show-91932.mp3" preload="auto"></audio>
+
+    <!-- Linking external JavaScript file for game logic -->
+    <script src="/full stack developer/tic tac toe/script.js"></script>
+</body>
+</html>
