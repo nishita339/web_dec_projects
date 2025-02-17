@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <audio id="bg-music" loop>
+            <source src="/full stack developer/Rock, Paper, Scissors/assets/rock-paper-scissors-hands-26989.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="winner-music">
+            <source src="/full stack developer/Rock, Paper, Scissors/assets/winning-218995.mp3" type="audio/mpeg">
+        </audio>
+        <div class="choices">
+            <div class="choice" onclick="playGame('rock')">✊ Rock</div>
+            <div class="choice" onclick="playGame('paper')">✋ Paper</div>
+            <div class="choice" onclick="playGame('scissors')">✌️ Scissors</div>
+        </div>
+        <p id="result"></p>
+        <div id="scoreboard">Player: <span id="playerScore">0</span> | Computer: <span id="computerScore">0</span></div>
+        <button class="restart" onclick="resetGame()">Restart</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
